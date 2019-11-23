@@ -101,7 +101,5 @@ deploy:
 
 # 把scss转换为css
 node_sass:
-  debug: false
-  outputStyle: nested
-  precision: 5
-  sourceComments: false 
+  includePaths:
+   - node_modules

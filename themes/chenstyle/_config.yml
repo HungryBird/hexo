@@ -11,7 +11,8 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/chenstyle.css
+- /css/doc.css
+- /css/normalize.css
 
 # scripts loaded in the end of the body
 scripts:
