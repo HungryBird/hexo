@@ -98,3 +98,10 @@ deploy:
   type: git
   repository: https://github.com/HungryBird/HungryBird.github.io.git
   branch: master
+
+# 把scss转换为css
+node_sass:
+  debug: false
+  outputStyle: nested
+  precision: 5
+  sourceComments: false 
