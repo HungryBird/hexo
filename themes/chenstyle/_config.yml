@@ -11,7 +11,7 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/doc.css
+- /css/style.css
 - /css/normalize.css
 
 # scripts loaded in the end of the body
