@@ -3,6 +3,11 @@ layout: 'page:title'
 title: javascript IIFE使用注意事项
 date: 2019-11-24 02:11:37
 tags:
+- javascript
+- IIFE
+- js
+categories:
+- web前端
 ---
 >已知IIFE的8种实现方式 
 

@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        <% for(const key in theme.menu) { %>
+            <li>
+                <%- __('Menu.' + key) %>
+            </li>
+        <% } %>
+    </ul>
+</nav>
