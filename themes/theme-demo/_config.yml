@@ -4,3 +4,6 @@ menu:
   Archives: /archives
   About: /about
   Github: https://github.com/hungrybird
+
+stylesheets:
+- /css/style.css
