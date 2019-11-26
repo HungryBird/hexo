@@ -2,7 +2,9 @@
     <ul>
         <% for(const key in theme.menu) { %>
             <li>
-                <%- __('Menu.' + key) %>
+                <a href="<%- theme.menu[key] %>">
+                    <%- __('Menu.' + key) %>
+                </a>
             </li>
         <% } %>
     </ul>
