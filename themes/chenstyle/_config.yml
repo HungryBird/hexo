@@ -1,19 +1,13 @@
-
-# html lang
-language: zh-CH
-
-# main menu navigation
+# 导航菜单
 menu:
-  首页: /
-  关于: /about
-  联系: /contact
-  档案: /archives
+  Home: /
+  About: /about
+  Archives: /archives
+  Contact: /contact
 
-# stylesheets loaded in the <head>
+# css路径
 stylesheets:
-- /css/style.css
-- /css/normalize.css
 
-# scripts loaded in the end of the body
-scripts:
-- /js/chenstyle.js
+# js路径
+javascripts:
+
