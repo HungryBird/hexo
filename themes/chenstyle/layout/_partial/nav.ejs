@@ -1,11 +1,15 @@
 <nav>
-    <ul>
-        <% for(const key in theme.menu) { %>
-            <li>
-                <a href="<%- theme.menu[key] %>">
-                    <%- __('Menu.' + key) %>
-                </a>
-            </li>
-        <% } %>
-    </ul>
+    <div class="contant">
+        <ul class="routes-wrap">
+            <% for(const key in theme.menu) { %>
+                <li class="<%- is_current(theme.menu[key]) ? 'active' : '' %>">
+                    <a href="<%- theme.menu[key] %>">
+                        <%- __('Menu.' + key) %>
+                    </a>
+                    <div class="light-line"></div>
+                </li>
+                <% } %>
+        </ul>
+    </div>
+
 </nav>
