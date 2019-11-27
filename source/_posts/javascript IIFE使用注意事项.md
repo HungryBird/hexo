@@ -8,6 +8,7 @@ tags:
 - js
 categories:
 - web前端
+- javascript
 ---
 >已知IIFE的8种实现方式 
 
