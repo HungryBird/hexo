@@ -1,12 +1,11 @@
 html {
-    background: yellow;
+    background: $bg-weak-color;
 }
 
 body {
     width: 1000px;
-    margin: 0 auto;
-    padding: 60px 20px 0 20px;
-    background: white;
+    margin: 70px auto 10px auto;
+    padding: 4px 20px;
 }
 
 nav {
@@ -14,8 +13,9 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
-    box-shadow: 0 2px 6px rgba($color: #333, $alpha: 0.3);
+    background: $bg-base-color;
+    box-shadow: 0 2px 2px $box-showdow-color;
+    user-select: none;
     .contant {
         width: 1140px;
         height: $nav-height;
@@ -33,6 +33,9 @@ nav {
                 position: relative;
                 float: left;
                 margin-left: 16px;
+                a {
+                    color: $font-weak-color;
+                }
                 .light-line {
                     display: none;
                     position: absolute;
@@ -40,14 +43,28 @@ nav {
                     left: 0;
                     width: 100%;
                     height: 3px;
-                    background: rgba($color: #3b56ce, $alpha: 1.0);
+                    background: rgba($color: $active-color, $alpha: 1.0);
                 }
             }
             li.active {
+                a {
+                    color: $font-base-color;
+                    font-weight: bold;
+                }
                 .light-line {
                     display: block;
                 }
             }
         }
+    }
+}
+
+.home {
+    .main {
+        padding: $base-padding;
+        background: $bg-base-color;
+        border-radius: $base-radius;
+        overflow: hidden;
+        box-shadow: 0 1px 3px $box-showdow-color;
     }
 }

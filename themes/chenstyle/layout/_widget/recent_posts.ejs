@@ -1,5 +1,17 @@
-<% page.posts.forEach(post => { %>
-    <h4>
-        <%= post.title %>
-    </h4>
-<% })%>
+<div class="home">
+    <div class="main">
+        <% page.posts.forEach(post => { %>
+            <section>
+                <h1 class="title">
+                    <a href="<%- url_for(post.path) %>">
+                        <%- post.title %>
+                    </a>
+                </h1>
+                <p>
+                    <%- post.content %>
+                </p>
+            </section>
+            <% })%>
+    </div>
+
+</div>
