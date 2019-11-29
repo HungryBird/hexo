@@ -60,11 +60,35 @@ nav {
 }
 
 .home {
+    display: flex;
     .main {
+        width: 700px;
         padding: $base-padding;
         background: $bg-base-color;
         border-radius: $base-radius;
         overflow: hidden;
         box-shadow: 0 1px 3px $box-showdow-color;
+        section {
+            padding: 16px 0;
+            border-bottom: 1px solid #ddd;
+            &:last-child {
+                border-bottom: none;
+            }
+            .title {
+                margin-bottom: 8px;
+                font-family: 24px;
+                font-weight: bold;
+            }
+            .post {
+                // width: 20em;
+                // @include text-show-ellipsis;
+            }
+        }
+    }
+    .aside {
+        background: $bg-base-color;
+        margin-left: $layout-margin;
+        flex: 1;
+        border-radius: $base-radius;
     }
 }

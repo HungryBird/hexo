@@ -10,9 +10,12 @@ categories:
 - web前端
 - javascript
 ---
->已知IIFE的8种实现方式 
+<!--excerpt-->
+IIFE（ 立即调用函数表达式）是一个在定义时就会立即执行的  JavaScript 函数。
 
-<!-- more -->
+实现IIFE有多种方法，但是需要获得IIFE的返回值时，每一种实现方法返回的值可能都会不一样。
+<!--more-->
+>已知IIFE的8种实现方式 
 
 1. `(function(){}())` 
 2. `(function(){})()`

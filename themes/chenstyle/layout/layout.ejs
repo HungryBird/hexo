@@ -6,5 +6,8 @@
         <%- partial('_partial/nav') %>
             <%- body %>
     </body>
+    <% if(page.posts && page.posts.length > 0) { %>
+        <%- js('js/recent_post') %>
+            <% } %>
 
 </html>
