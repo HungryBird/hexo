@@ -3,8 +3,9 @@
 <%- partial('_partial/head') %>
 
     <body>
-        <%- partial('_partial/nav') %>
-            <%- body %>
+        <%- partial('_partial/carousel') %>
+            <%- partial('_partial/nav') %>
+                <%- body %>
     </body>
     <% if(page.posts && page.posts.length > 0) { %>
         <%- js('js/recent_post') %>

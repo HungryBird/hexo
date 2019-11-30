@@ -1,20 +1,40 @@
-<div class="main">
-    <% page.posts.forEach(post => { %>
+<div class="block-name">
+    文章
+</div>
+<div class="article">
+    <!-- <button class="block-name">
+        <strong>文章</strong>
+        更多
+        <i class="fa fa-angle-double-right" style="color: #fff;"></i>
+    </button> -->
+
+    <% page.posts.forEach((post, index) => { %>
         <section>
             <div class="title">
                 <a href="<%- url_for(post.path) %>">
-                    <i class="fa fa-home"></i>
                     <%- post.title %>
                 </a>
             </div>
             <p>
                 <div class="post">
                     <%- post.excerpt %>
-
+                        <a href="<%- url_for(post.path) %>"><i class="fa fa-angle-double-right see-more"></i></a>
                 </div>
-                <time>
-                    <%- formatDate(post.updated) %>
-                </time>
+                <div class="post-bottom">
+                    <time>
+                        <%- post.updated > post.date ? '更新于' : '发表于' %><%- formatDate(post.updated) %>
+                    </time>
+                    <% if(post.tags.data && post.tags.data.length > 0) { %>
+                        <ul class="tags-wrap">
+                            <% for(const tag of post.tags.data) { %>
+                                <li>
+                                    <i class="fa fa-tag post-tag"><%- tag.name %></i>
+                                </li>
+                                <% } %>
+                        </ul>
+                        <% } %>
+                </div>
+
             </p>
         </section>
         <% })%>

@@ -3,8 +3,7 @@ title: hexo使用笔记二：使用i18n
 date: 2019-11-27 00:11:42
 tags:
 - hexo
-- hexo router
-- hexo theme
+- i18n
 - lodash
 categories:
 - blog

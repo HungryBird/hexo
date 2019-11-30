@@ -1,14 +1,15 @@
 // decoration
 $base-radius:8px;
 $base-padding: 20px;
+$base-margin: 20px;
 // color
-$bg-base-color:rgb(255, 255, 255);
-$bg-weak-color:rgb(241, 241, 241);
-$font-base-color:rgb(51, 51, 51);
-$font-weak-color:rgb(121, 121, 121);
-$active-color:rgb(58, 85, 204);
-$box-showdow-color:rgba($color: #333, $alpha: 0.1);
+$bg-color-base:rgb(255, 255, 255);
+$bg-color-weak:rgb(241, 241, 241);
+$font-color-base:rgb(51, 51, 51);
+$font-color-weak:rgb(121, 121, 121);
+$active-color-default:rgb(20, 115, 240);
+$box-color-showdow-base:rgba($color: #333, $alpha: 0.1);
 // nav
 $nav-height:60px;
 // layout
-$layout-margin: 10px;
+$layout-margin: 16px;
