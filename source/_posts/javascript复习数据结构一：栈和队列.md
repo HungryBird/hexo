@@ -20,7 +20,7 @@ js没有栈和队列数据结构，用Array可以很轻松的模拟出来。
 
 |方法   |解释   |
 |--|--|
-|push() |进栈   |
+|push(item) |进栈   |
 |pop()  |出栈   |
 |isEmpty() |判空   |
 |isMax() |判满   |
@@ -71,7 +71,7 @@ function Stack(max) {
 
 |方法   |解释   |
 |--|--|
-|enqueue() |队列尾部添加一个或多个元素   |
+|enqueue(item) |队列尾部添加一个或多个元素   |
 |dequeue()  |队列头部删除一个元素，并返回被删除的元素   |
 |isEmpty() |判空   |
 |isMax() |判满   |
