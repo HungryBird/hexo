@@ -11,7 +11,7 @@ categories:
 已知队列和栈的出口都是单向的，如果要移除中间元素就要移除一半的元素。
 因此链表的出现让存储有序数据变得更加灵活。
 <!--more-->
->链表的结构示意图
+>单向链表的结构示意图
 
 <kbd>head</kbd> => <kbd>data|next</kbd> => <kbd>data|next</kbd> => null
 
@@ -143,3 +143,9 @@ function LinkedList() {
     };
 }
 ````
+
+>双向链表：比单向链表的node多了一个previous指向前一个node
+
+>循环单向链表：单向链表最后一个node的next指向head
+
+>循环双向链表：双向链表最后一个node的next指向head
