@@ -2,12 +2,9 @@
 title: Vue自定义指令directive使用注意事项
 date: 2019-11-27 12:16:58
 tags:
-- Vue
 - directive
 categories:
-- web前端
 - Vue
-- javascript
 ---
 <!--excerpt-->
 当我们需要对原生标签添加底层操作的方法，或是不方便修改其他人封装的组建时，自定义指令给我们更大的开发自由度。
