@@ -1,0 +1,25 @@
+.contact{
+    width: 600px;
+    margin: 200px auto;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    li{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        cursor: pointer;
+        a{
+            display: inline-block;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+#URL-wrapper{
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+}

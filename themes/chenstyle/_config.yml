@@ -2,7 +2,7 @@
 menu:
   Home: /
   About: /about
-  Archives: /archives
+  # Archives: /archives
   Contact: /contact
 
 # css路径

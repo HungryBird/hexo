@@ -1,0 +1,12 @@
+strong.about-title{
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #b6b6b6;
+    margin: 20px 0;
+    &:first{
+        margin-top: 10px;
+    }
+    span{
+        color: #b6b6b6;
+    }
+}

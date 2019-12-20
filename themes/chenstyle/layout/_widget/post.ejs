@@ -1,5 +1,11 @@
 <div>
-    <%- page.title %>
+    <% if (page.categories && page.categories instanceof Array) { %>
+        <% if (page.categories.indexOf('about') === -1 && page.categories.indexOf('contact') === -1) { %>
+            <h3><%- page.title %></h3>
+        <% } %>
+    <% } else { %>
+        <h3><%- page.title %></h3>
+    <% } %>
 </div>
 <div>
     <%- page.content %>
