@@ -3,6 +3,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999999;
     background: $bg-color-base;
     box-shadow: 0 2px 2px $box-color-showdow-base;
     user-select: none;
