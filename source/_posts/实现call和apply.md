@@ -85,3 +85,17 @@ Function.prototype.call1 = function() {
 foo.call1(obj, 1, 2)  // 1 2 'obj'
 </pre>
 
+3. 当function有返回值时
+<pre>
+function foo() {
+    return {
+        name: this.name
+    };
+}
+var f = foo.call(obj);
+console.log(f)  // {name: 'obj'}
+</pre>
+因此需要给一个返回值
+<pre>
+
+</pre>
