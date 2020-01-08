@@ -21,14 +21,14 @@ call和apply唯一的不同就是传参类型不同，call传参的是一个参�
 这里实现call之前先看看call是怎么用的。
 
 <pre>
-var name = 'win'
+var name = 'window'
 var obj = {name: 'obj'}
 function foo(arg1, arg2) {
     console.log(arg1)
     console.log(arg2)
     console.log(this.name)
 }
-foo()   // 'win'
+foo()   // 'window'
 foo.call(obj, '1', '2')   // 1 2 'obj'
 </pre>
 
@@ -97,5 +97,61 @@ console.log(f)  // {name: 'obj'}
 </pre>
 因此需要给一个返回值
 <pre>
+Function.prototype.call1 = function() {
+    const context = arguments[0];
+    const arr = [];
+    for(let i = 1; i < arr.length; i++) {
+        arr.push(arguments[i]);
+    }
 
+    const fn = Symbol('fn');
+    context[fn] = this;
+    let result = `context[fn](...arr)
+    delete context[fn]
+    return result;
+}
+function bar() {
+    console.log(this.name);
+    return 1;
+}
+const b = bar.call1(obj)  // 'obj'
+console.log(b)  // 1
+</pre>
+
+4. 当传入一个空值时
+<pre>
+foo.call(null)  // 'window'
+</pre>
+所以要添加一个空的判断
+<pre>
+Function.prototype.call1 = function() {
+    const context = arguments[0] ? arguments[0] : window;
+    const arr = [];
+    for(let i = 1; i < arr.length; i++) {
+        arr.push(arguments[i]);
+    }
+
+    const fn = Symbol('fn');
+    context[fn] = this;
+    let result = `context[fn](...arr)
+    delete context[fn]
+    return result;
+}
+function baz() {
+    console.log(this.name);
+}
+const z = baz.call1()  // 'window'
+</pre>
+
+>模拟apply的实现
+<pre>
+Function.prototype.call1 = function() {
+    const context = arguments[0] ? arguments[0] : window;
+    const arr = arguments[1] ? arguments[1] : [];
+    const fn = Symbol('fn');
+    context[fn] = this;
+    let result = `context[fn](...arr)
+    delete context[fn]
+    return result;
+}
 </pre>
